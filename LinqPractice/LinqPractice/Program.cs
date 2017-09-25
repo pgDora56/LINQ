@@ -12,7 +12,6 @@ namespace LinqPractice
         {
             var arr = new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 94, 5 };
 
-
             var squareArr = arr.Select(value => value * value);
             // { 4, 9, 16, 25, 36, 49, 64, 81, 100, 169, 8836, 25 }
             // Selectは写像。メンバに一つずつ関数を適用し、その戻り値で新しい配列（コレクション）を作る。
@@ -23,7 +22,39 @@ namespace LinqPractice
             // Whereはフィルター。メンバの中から条件に合う要素を取り出す。
             // このとき、奇数の値のみを抽出した配列を返す。
 
+
+            var datas = new Data[]
+            {
+                new Data(2,"World"),
+                new Data(3,"C#"),
+                new Data(99,"GitHub"),
+                new Data(5,"Git"),
+                new Data(1,"Hello"),
+                new Data(4,"LINQ"),
+            };
+
+            var datasNoOrder = datas.OrderBy(data => data.No);
+
+            foreach (Data d in datas) d.Write();
+            foreach (Data d in datasNoOrder) d.Write();
+
         }
 
+    }
+
+    class Data
+    {
+        public int No { get; set; }
+        public string Genre { get; set; }
+        public string Text { get; set; }        
+        public Data(int n, string t)
+        {
+            No = n;
+            Text = t;
+        }
+        public void Write()
+        {
+            Console.WriteLine($"{No}:{Text}");
+        }
     }
 }
