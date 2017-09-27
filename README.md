@@ -4,9 +4,9 @@ LINQ(C#)を勉強しようと思い立った
 勉強の中で得たLINQについての情報を書いていきます。
 
 ## About This Repository
-* LinqPractice/ (Project) => LINQの基礎的な構文のまとめ
-* StudentsDataBase/ (Project) => LINQを使った架空のデータベースを扱うものを作る
-* README.md => この説明ファイル
+* LinqPractice (Project) => LINQの基礎的な構文のまとめ
+* StudentsDataBase (Project) => LINQを使った架空のデータベースを扱うものを作る
+* README.md => このファイル
 
 ## About LINQ  
 
