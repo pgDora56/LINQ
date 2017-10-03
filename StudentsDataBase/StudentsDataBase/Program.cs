@@ -28,7 +28,6 @@ namespace StudentsDataBase
                 new Student(100402,"Mami Futami","Education"),
             };
 
-            int command = 0;
             while (true)
             {
                 Console.Clear();
