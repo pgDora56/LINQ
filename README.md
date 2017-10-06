@@ -7,6 +7,7 @@ LINQ(C#)を勉強しようと思い立った
 * LinqPractice (Project) => LINQの基礎的な構文のまとめ
 * StudentsDataBase (Project) => LINQを使った架空のデータベースを扱うものを作る
 * README.md => このファイル
+* ...and more!(予定)
 
 ## About LINQ  
 
